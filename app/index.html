@@ -2,15 +2,109 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Portfolio</title>
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1>Lorem ipsum dolor sit amet</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium perspiciatis maiores dicta natus dolor harum eaque quidem dolore suscipit quae, ut hic ipsam provident dolorum ipsum facere deleniti magni.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod totam enim, accusantium repudiandae veritatis quia minima in. Possimus animi, amet commodi quibusdam, totam optio esse porro iure unde et in.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi earum tempora consequatur dolore dignissimos omnis tenetur, enim explicabo ut, ab maxime, totam laudantium expedita eius fugit. Similique, ad mollitia corrupti!</p>
+	<header class="header">
+		<div class="header-container clearfix">
+			<a href="#">
+				<img src="img/logo.png" height="71" width="95" alt="LoftSchool Logo" class="logo">
+			</a>
+			<ul class="social-buttons">
+				<li><a href="#" class="social-btn fb-icon">fb</a></li>
+				<li><a href="#" class="social-btn vk-icon">vk</a></li>
+				<li><a href="#" class="social-btn tw-icon">tw</a></li>
+				<li><a href="#" class="social-btn gh-icon">gh</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="content">
+		<div class="main-container clearfix">
+			<aside>
+				<nav>
+					<ul class="main-nav">
+						<li><a href="#">Обо мне</a></li>
+						<li><a href="#">Мои работы</a></li>
+						<li><a href="#">Обратная связь</a></li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<header class="contacts-header">Контакты</header>
+					<ul>
+						<li><a href="#">valery.litvinchuk@gmail.com</a></li>
+						<li><a href="#">+375298201059</a></li>
+						<li><a href="#">valery.litvinchuk</a></li>
+					</ul>
+				</div>
+			</aside>
+			<main>
+				<section class="section">
+					<header class="section-header">Основная информация</header>
+					<div class="section-content">
+						<div class="photo">
+							<img src="http://lorempixel.com/150/150/people" alt="I am" class="my-photo">
+						</div>
+						<div class="info">
+							<p>Меня зовут: Литвинчук Валерий Николаевич</p>
+							<p>Мой возраст: 26 лет</p>
+							<p>Мой город: Брест, Беларусь</p>
+							<p>Моя специализация: Front-End Developer</p>
+							<p>Ключевые навыки:</p>
+						</div>
+					</div>
+				</section>
+				<section class="section">
+					<header class="section-header">Опыт работы</header>
+					<div class="section-content">
+						<ul>
+							<li>
+								<div class="pic"></div>
+								<p>ОАО "БЭМЗ" - Слесарь механо-сборочных работ</p>
+								<p>Август 2009 - Август - 2011</p>
+							</li>
+							<li>
+								<div class="pic"></div>
+								<p>СП "БэмКромГаз - Слесарь механо-сборочных работ</p>
+								<p>Август 2011 - Август 2012</p>
+							</li>
+							<li>
+								<div class="pic"></div>
+								<p>ЧУП "Фотостудия Восток"</p>
+								<p>Художник по комбинированным съёмкам</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section">
+					<header class="section-header">Образование</header>
+					<div class="section-content">
+						<ul>
+							<li>
+								<div class="pic"></div>
+								<p>Среднее. Средняя школа №30 г. Бреста</p>
+								<p>1996 - 2005</p>
+							</li>
+							<li>
+								<div class="pic"></div>
+								<p>Среднее специальное. Брестский государственный политехнический колледж</p>
+								<p>2005 - 2009</p>
+							</li>
+							<li><div class="pic"></div>
+								<p>Высшее. Брестский государственный университет им. А.С.Пушкина</p>
+								<p>2009 - 2014</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+	<footer class="footer">
+		<a href="#" class="sign-in">Вход</a>
+		<p class="copyright">&#169; 2015. Это мой сайт. Пожалуйста, не копируйте и не воруйте его!</p>
+	</footer>
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="js/main.js"></script>
 </body>
