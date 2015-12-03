@@ -1,3 +1,11 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	background: url('../img/back.jpg') repeat;
+	font: normal 1em "Open Sans";
+}
 .clearfix:after {
     content: "";
     display: table;
@@ -10,20 +18,21 @@
 	background-color: #757575;
 	border-bottom: 7px solid #fff;
 	box-shadow: 0 1px 3px 0 #999;
+	margin-bottom: 35px;
 }
 .header-container {
-	width: 1200px;
+	width: 1190px;
 	margin: 0 auto;
 	overflow: auto;
 }
 .logo {
 	float: left;
 	display: block;
-	margin: 10px 0;
+	margin: 10px 0 5px;
 }
 .social-buttons {
 	float: right;
-	margin: 26px 0;
+	margin: 27px 0;
 	padding: 0;
 	font-size: 0;
 }
@@ -70,9 +79,6 @@
 .social-buttons .gh-icon:hover {
 	background-position: -87px 1px;
 }
-.content {
-	background: url('../img/back.jpg');
-}
 .main-container {
 	width: 960px;
 	margin: 0 auto;
@@ -81,8 +87,12 @@
 .aside {
 	float: left;
 }
+.nav {
+	margin-bottom: 35px;
+}
 .aside-nav {
 	padding: 0;
+	margin: 0;
 }
 .aside-nav li {
 	list-style-type: none;
@@ -91,8 +101,10 @@
 	color: #727070;
 	display: block;
 	text-decoration: none;
-	padding: 20px 30px;
+	padding: 14px 60px 14px 30px;
 	background-color: #f2f0ef;
+	font-size: 20px;
+	font-weight: 600;
 }
 .aside-nav li a:hover:not(.active) {
 	background-color: #d4d2d2;
@@ -103,9 +115,11 @@
 }
 .contacts-header {
 	display: block;
-	padding: 20px 30px;
+	padding: 9px 60px 9px 30px;
 	background-color: #e9c06f;
 	color: #d0982c;
+	font-size: 20px;
+	font-weight: 600;
 }
 .contacts ul {
 	margin: 0;
@@ -115,11 +129,11 @@
 	list-style-type: none;
 }
 .contacts a {
-	font-size: 10px;
+	font-size: 14px;
 	color: #727070;
 	display: block;
 	text-decoration: none;
-	padding: 10px 20px;
+	padding: 9px 0 9px 100px;
 	background-color: #fbfbfb;
 }
 .contacts a:hover {
@@ -130,25 +144,89 @@
 	float: right;
 }
 .section {
-	margin-top: 16px;
 	width: 650px;
+	margin-bottom: 37px;
 }
 .section-header {
 	background-color: #8e8b8b;
 	color: #fff;
-	padding: 20px 45px;
+	padding: 11px 41px;
+	font-weight: 600;
+	font-size: 24px;
 }
 .section-content {
 	background-color: #f6f5f5;
 }
 .photo {
 	float: left;
-	border-radius: 50%;
 	overflow: hidden;
-	border: 10px solid #f6f5f4;
+	margin: 37px 0 37px 41px;
 	box-shadow: 0 0 2px 0 #555;
-	margin: 40px 0 40px 45px;
+	border: 9px solid #f6f5f4;
+	border-radius: 50%;
+	width: 135px;
+	height: 135px;
 }
 .info {
 	float: right;
+	width: 420px;
+	font-size: 14px;
+}
+.worksheet-list {
+	margin: 0;
+	padding: 33px 0 0 0;
+}
+.worksheet-item {
+	list-style-type: none;
+	margin-bottom: 6px;
+}
+.worksheet-item:last-child {
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+.worksheet-what {
+	display: inline-block;
+	font-weight: 600;
+}
+.worksheet-info {
+	display: inline-block;
+}
+.section-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+.section-item {
+	display: inline-block;
+	padding: 47px 0 0 137px;
+	position: relative;
+	margin-bottom: 8px;
+}
+.section-item:before {
+	position: absolute;
+	left: 40px;
+	content: "";
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	float: left;
+	background-color: #f7f7f7;
+	border-radius: 50%;
+	box-shadow: inset 1px 1px 0 1px #d1d1d1, inset -1px -1px 0 1px #fff;
+	top: 40px;
+}
+.section-item:after {
+	content: "";
+	display: block;
+	width: 560px;
+	height: 1px;
+	background-color: #dbdbda;
+	box-shadow: 0 1px 0 0 #edeceb;
+	position: absolute;
+	top: 113px;
+	left: 40px;
+}
+.section-where {
+	font-weight: 600;
 }

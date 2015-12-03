@@ -12,6 +12,8 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<!-- Modernizr -->
+	<script src="bower/modernizer/modernizr.js"></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -48,7 +50,7 @@
 				<div class="contacts">
 					<header class="contacts-header">Контакты</header>
 					<ul>
-						<li><a href="#">valery.litvinchuk@gmail.com</a></li>
+						<li><a href="#">valery@gmail.com</a></li>
 						<li><a href="#">+375298201059</a></li>
 						<li><a href="#">valery.litvinchuk</a></li>
 					</ul>
@@ -59,35 +61,51 @@
 					<header class="section-header">Основная информация</header>
 					<div class="section-content clearfix">
 						<div class="photo">
-							<img src="img/avatar.jpg" height="150" width="150" alt="I am" class="my-photo">
+							<img src="img/avatar.jpg" alt="I am" class="my-photo">
 						</div>
 						<div class="info">
-							<p>Меня зовут: Литвинчук Валерий Николаевич</p>
-							<p>Мой возраст: 26 лет</p>
-							<p>Мой город: Брест, Беларусь</p>
-							<p>Моя специализация: Front-End Developer</p>
-							<p>Ключевые навыки:</p>
+							<ul class="worksheet-list">
+								<li class="worksheet-item">
+									<div class="worksheet-what">Меня зовут:</div>
+									<div class="worksheet-info">Литвинчук Валерий Николаевич</div>
+								</li>
+								<li class="worksheet-item">
+									<div class="worksheet-what">Мой возраст:</div>
+									<div class="worksheet-info">26 лет</div>
+								</li>
+								<li class="worksheet-item">
+									<div class="worksheet-what">Мой город:</div>
+									<div class="worksheet-info">Брест, Беларусь</div>
+								</li>
+								<li class="worksheet-item">
+									<div class="worksheet-what">Моя специализация:</div>
+									<div class="worksheet-info">Front-End Developer</div>
+								</li>
+								<li class="worksheet-item">
+									<div class="worksheet-what">Ключевые навыки:</div>
+									<div class="worksheet-info"></div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</section>
 				<section class="section">
 					<header class="section-header">Опыт работы</header>
 					<div class="section-content">
-						<ul>
-							<li>
-								<div class="pic"></div>
-								<p>ОАО "БЭМЗ" - Слесарь механо-сборочных работ</p>
-								<p>Август 2009 - Август - 2011</p>
+						<ul class="section-list">
+							<li class="section-item">
+								<div class="inset-wrapper">
+									<div class="section-where">ОАО "БЭМЗ" - Слесарь механо-сборочных работ</div>
+									<div class="section-period">Август 2009 - Август - 2011</div>
+								</div>
 							</li>
-							<li>
-								<div class="pic"></div>
-								<p>СП "БэмКромГаз - Слесарь механо-сборочных работ</p>
-								<p>Август 2011 - Август 2012</p>
+							<li class="section-item">
+								<div class="section-where">СП "БэмКромГаз - Слесарь механо-сборочных работ</div>
+								<div class="section-period">Август 2011 - Август 2012</div>
 							</li>
-							<li>
-								<div class="pic"></div>
-								<p>ЧУП "Фотостудия Восток"</p>
-								<p>Художник по комбинированным съёмкам</p>
+							<li class="section-item">
+								<div class="section-where">ЧУП "Фотостудия Восток"</div>
+								<div class="section-period">Художник по комбинированным съёмкам</div>
 							</li>
 						</ul>
 					</div>
@@ -95,20 +113,18 @@
 				<section class="section">
 					<header class="section-header">Образование</header>
 					<div class="section-content">
-						<ul>
-							<li>
-								<div class="pic"></div>
-								<p>Среднее. Средняя школа №30 г. Бреста</p>
-								<p>1996 - 2005</p>
+						<ul class="section-list">
+							<li class="section-item">
+								<div class="section-where">Среднее. Средняя школа №30 г. Бреста</div>
+								<div class="section-period">1996 - 2005</div>
 							</li>
-							<li>
-								<div class="pic"></div>
-								<p>Среднее специальное. Брестский государственный политехнический колледж</p>
-								<p>2005 - 2009</p>
+							<li class="section-item">
+								<div class="section-where">Среднее специальное. Брестский государственный политехнический колледж</div>
+								<div class="section-period">2005 - 2009</div>
 							</li>
-							<li><div class="pic"></div>
-								<p>Высшее. Брестский государственный университет им. А.С.Пушкина</p>
-								<p>2009 - 2014</p>
+							<li class="section-item">
+								<div class="section-where">Высшее. Брестский государственный университет им. А.С.Пушкина</div>
+								<div class="section-period">2009 - 2014</div>
 							</li>
 						</ul>
 					</div>
