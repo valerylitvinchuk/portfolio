@@ -8,14 +8,147 @@
 }
 .header {
 	background-color: #757575;
+	border-bottom: 7px solid #fff;
+	box-shadow: 0 1px 3px 0 #999;
 }
 .header-container {
 	width: 1200px;
 	margin: 0 auto;
+	overflow: auto;
 }
 .logo {
 	float: left;
+	display: block;
+	margin: 10px 0;
 }
 .social-buttons {
+	float: right;
+	margin: 26px 0;
+	padding: 0;
+	font-size: 0;
+}
+.social-buttons li {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 15px;
+}
+.social-buttons li:first-child {
+	margin-left: 0;
+}
+.social-buttons a {
+	text-decoration: none;
+	display: block;
+	width: 36px;
+	height: 36px;
+	text-indent: -9999px;
+	border-radius: 50%;
+	background: url('../img/social-btn.png');
+	background-color: #f6f5f4;
+	box-shadow: 0 2px 2px 1px #444;
+}
+.social-buttons .fb-icon {
+	background-position: 3px 37px;
+}
+.social-buttons .vk-icon {
+	background-position: -23px 37px;
+}
+.social-buttons .tw-icon {
+	background-position: -53px 37px;
+}
+.social-buttons .gh-icon {
+	background-position: -87px 37px;
+}
+.social-buttons .fb-icon:hover {
+	background-position: 3px 1px;
+}
+.social-buttons .vk-icon:hover {
+	background-position: -23px 1px;
+}
+.social-buttons .tw-icon:hover {
+	background-position: -53px 1px;
+}
+.social-buttons .gh-icon:hover {
+	background-position: -87px 1px;
+}
+.content {
+	background: url('../img/back.jpg');
+}
+.main-container {
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+}
+.aside {
+	float: left;
+}
+.aside-nav {
+	padding: 0;
+}
+.aside-nav li {
+	list-style-type: none;
+}
+.aside-nav li a {
+	color: #727070;
+	display: block;
+	text-decoration: none;
+	padding: 20px 30px;
+	background-color: #f2f0ef;
+}
+.aside-nav li a:hover:not(.active) {
+	background-color: #d4d2d2;
+}
+.aside-nav li .active {
+	color: #1e7465;
+	background-color: #5dceb2;
+}
+.contacts-header {
+	display: block;
+	padding: 20px 30px;
+	background-color: #e9c06f;
+	color: #d0982c;
+}
+.contacts ul {
+	margin: 0;
+	padding: 0;
+}
+.contacts li {
+	list-style-type: none;
+}
+.contacts a {
+	font-size: 10px;
+	color: #727070;
+	display: block;
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: #fbfbfb;
+}
+.contacts a:hover {
+	text-decoration: underline;
+	background-color: #f4ead8;
+}
+.main {
+	float: right;
+}
+.section {
+	margin-top: 16px;
+	width: 650px;
+}
+.section-header {
+	background-color: #8e8b8b;
+	color: #fff;
+	padding: 20px 45px;
+}
+.section-content {
+	background-color: #f6f5f5;
+}
+.photo {
+	float: left;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 10px solid #f6f5f4;
+	box-shadow: 0 0 2px 0 #555;
+	margin: 40px 0 40px 45px;
+}
+.info {
 	float: right;
 }
