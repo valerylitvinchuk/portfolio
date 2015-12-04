@@ -205,6 +205,13 @@ body {
 }
 .section-item:before {
 	position: absolute;
+	top: 60px;
+	left: 55px;
+	z-index: 1;
+	font-size: 20px;
+}
+.section-item:after {
+	position: absolute;
 	left: 40px;
 	content: "";
 	display: inline-block;
@@ -216,7 +223,7 @@ body {
 	box-shadow: inset 1px 1px 0 1px #d1d1d1, inset -1px -1px 0 1px #fff;
 	top: 40px;
 }
-.section-item:after {
+/*.section-item:after {
 	content: "";
 	display: block;
 	width: 560px;
@@ -226,7 +233,7 @@ body {
 	position: absolute;
 	top: 113px;
 	left: 40px;
-}
+}*/
 .section-where {
 	font-weight: 600;
 }
