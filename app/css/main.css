@@ -9,10 +9,11 @@ html {
 }
 body {
 	height: 100%;
-	background: url('../img/back.jpg') repeat;
-	background-size: 100%;
+	background: url('../img/back.jpg');
+	/*background-sx: ;ize: cover;*/
+	background-repeat: no-repeat;
 	font: normal 1em "Open Sans";
-	width: 100%
+	min-width: 1200px;
 }
 .clearfix:after {
    content: "";
@@ -368,7 +369,7 @@ body {
   background-color: #fcfdf5;
   border: 1px solid #c3c2c2;
   border-radius: 5px;
-  box-shadow: 0 1px 0 #b2ddd83
+  box-shadow: 0 1px 0 #b2ddd83;
 }
 .section-list {
 	list-style-type: none;
@@ -435,7 +436,12 @@ body {
 	padding: 10px 0;
 	height: 50px;
 	margin-top: -50px;
+}
+.inset-footer-wrapper {
+	width: 664px;
+	margin: 0 auto;
 	position: relative;
+	line-height: 10px;
 }
 .sign-in {
 	display: inline-block;
@@ -444,21 +450,21 @@ body {
 	text-transform: uppercase;
 	color: #9c9c9c;
 	text-decoration: none;
-	top: 5px;
-	left: 395px;
-	position: absolute;
+	vertical-align: middle;
 }
 .sign-in:before {
 	content: "";
 	display: inline-block;
 	width: 30px;
-	height: 30px;
+	height: 35px;
 	background-image: url('../img/lock-unlock.png');
-	background-position: -3px 6px;
-	margin-right: 8px;;
+	background-position: -3px 3px;
+	margin-right: 8px;
+	vertical-align: middle;
 }
 .sign-in:hover:before {
-	background-position: -32px 6px;
+	background-position: -32px 3px;
+	vertical-align: middle;
 }
 .icon-lock:before,
 .icon-lock-open:before {
@@ -466,10 +472,12 @@ body {
 	color: #9c9c9c;
 }
 .copyright {
-	display: block;
+	display: inline-block;
 	font-size: 12px;
 	font-weight: 300;
 	color: #727070;
 	width: 395px;
-	margin: 13px auto;
+	margin: 0;
+	vertical-align: middle;
+	margin-left: 55px;
 }

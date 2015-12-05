@@ -1,0 +1,102 @@
+.section-work {
+	padding: 37px 0px 181px 41px;
+}
+.work-item {
+	display: inline-block;
+	width: 165px;
+	background-color: #fff;
+	color: #727070;
+	border-radius: 4px;
+	border: 1px solid #c5c5c5;
+	box-shadow: 0 2px 3px 0 #eae9e8;
+	margin-right: 29px;
+	margin-bottom: 66px;
+	vertical-align: top;
+	position: relative;
+}
+.work-item:last-child {
+	background: #fdfdfd;
+  background: -moz-linear-gradient(top,  #fdfdfd 0%, #e9e8e8 100%);
+  background: -webkit-linear-gradient(top,  #fdfdfd 0%,#e9e8e8 100%);
+  background: linear-gradient(to bottom,  #fdfdfd 0%,#e9e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#e9e8e8',GradientType=0 );
+	text-align: center;
+}	
+.work-img {
+	border-radius: 4px 4px 0 0;
+	overflow: hidden;
+	width: 165px;
+	height: 120px;
+	background-color: #6f6d6d;
+	opacity: .4;
+	position: relative;
+}
+.work-more {
+	display: none;
+	position: absolute;
+	text-decoration: none;
+	color: #ececec;
+	padding: 72px 39px 27px;
+	top: 0px;
+	left: 0px;
+}
+.work-img:hover {
+	opacity: 1;
+}
+.work-img:hover .work-more{
+	display: block;
+}
+.work-title {
+	font-size: 13px;
+	font-weight: 900;
+	background-color: #f2f2f2;
+	text-align: center;
+	padding: 8px 0;
+}
+.work-description {
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	padding: 4px 5px;
+}
+.add-project-button {
+	text-decoration: none;
+	color: #727070;
+	display: inline-block;
+	width: 167px;
+	padding: 75px 0 9px;
+}
+.add-project-button:hover {
+	background: #e8e7e7;
+  background: -moz-linear-gradient(top,  #e8e7e7 0%, #bfbdbd 100%);
+  background: -webkit-linear-gradient(top,  #e8e7e7 0%,#bfbdbd 100%);
+  background: linear-gradient(to bottom,  #e8e7e7 0%,#bfbdbd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e7e7', endColorstr='#bfbdbd',GradientType=0 );
+}
+.add-project:before {
+	position: absolute;
+	top: 43px;
+	left: 68px;
+	z-index: 1;
+	font-size: 20px;
+}
+.add-project:after {
+	position: absolute;
+	left: 56px;
+	content: "";
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	float: left;
+	background-color: #f7f7f7;
+	border-radius: 50%;
+	box-shadow: inset 1px 1px 0 1px #d1d1d1, inset -1px -1px 0 1px #fff;
+	top: 25px;
+}
+.add-project-button:hover .add-project:after {
+	background: #d7d7d7;
+}
+.add-project-text {
+	font-size: 14px;
+	font-weight: 600;
+}
