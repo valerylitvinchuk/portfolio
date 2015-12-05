@@ -132,7 +132,6 @@ body {
   background: -webkit-linear-gradient(top,  #e8e7e7 0%,#e3e1e1 8%,#c2c0c0 100%);
   background: linear-gradient(to bottom,  #e8e7e7 0%,#e3e1e1 8%,#c2c0c0 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e7e7', endColorstr='#c2c0c0',GradientType=0 );
-
 }
 .aside-nav li .active {
 	text-shadow: 0 1px 0 #90dbc8;
@@ -143,7 +142,6 @@ body {
   background: -webkit-linear-gradient(top,  #7ee8ce 0%,#3eb799 100%);
   background: linear-gradient(to bottom,  #7ee8ce 0%,#3eb799 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ee8ce', endColorstr='#3eb799',GradientType=0 );
-
 }
 .contacts-header {
 	display: block;

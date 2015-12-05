@@ -48,8 +48,8 @@
 					<nav class="nav">
 						<ul class="aside-nav">
 							<li><a href="index.html">Обо мне</a></li>
-							<li><a href="mywork.html" class="active">Мои работы</a></li>
-							<li><a href="feedback.html">Обратная связь</a></li>
+							<li><a href="mywork.html">Мои работы</a></li>
+							<li><a href="feedback.html" class="active">Обратная связь</a></li>
 						</ul>
 					</nav>
 					<div class="contacts">
@@ -63,54 +63,27 @@
 				</aside>
 				<main class="main">
 					<section class="section">
-						<header class="section-header">Мои работы</header>
-						<div class="section-content  section-work clearfix">
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-1">
-									<a href="#" class="work-more">Подробнее</a>
+						<header class="section-header">У вас интересный проект? Напишите мне</header>
+						<div class="section-content section-feedback">
+							<form action="">
+								<div class="form-wrapper">
+									<label for="name">Имя</label>
+									<input class="name" type="text" id="name" placeholder="Как к Вам обращаться" required>
 								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-2">
-									<a href="#" class="work-more">Подробнее</a>
+								<div class="form-wrapper">
+									<label for="mail">Email</label>
+									<input class="mail" type="email" id="mail" placeholder="Куда мне писать" required>
 								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-3">
-									<a href="#" class="work-more">Подробнее</a>
+								<label for="message">Сообщение</label>
+								<textarea class="message" id="message" placeholder="Кратко в чём суть" required></textarea>
+								<div class="form-big-wrapper">
+									<label for="code">Введите код, указанный на картинке</label>
+									<img src="http://placehold.it/190x80/" class="captcha" alt="captcha">
+									<input class="code" type="text" id="code" placeholder="Введите код" required>
 								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-4">
-									<a href="#" class="work-more">Подробнее</a>
-								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-5">
-									<a href="#" class="work-more">Подробнее</a>
-								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<a href="#" class="add-project-button">
-									<div class="add-project icon-picture"></div>
-									<p class="add-project-text">Добавить проект</p>
-								</a>
-							</div>
+								<input class="submit" type="submit">
+								<input class="reset" type="reset" value="Очистить">
+							</form>
 						</div>
 					</section>
 				</main>
