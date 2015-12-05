@@ -107,6 +107,7 @@ label {
 	font-weight: 900;
 }
 .submit {
+	font-weight: 700;
 	border-radius: 4px;
 	outline: none;
 	color: #1e7465;
@@ -144,6 +145,7 @@ label {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78baa0', endColorstr='#4a7664',GradientType=0 );
 }
 .reset {
+	font-weight: 700;
 	border-radius: 4px;
   background: -moz-linear-gradient(top,  #fcfcfc 0%, #e4e3e1 100%);
   background: -webkit-linear-gradient(top,  #fcfcfc 0%,#e4e3e1 100%);
