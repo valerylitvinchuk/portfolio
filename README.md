@@ -1,7 +1,23 @@
-> Инструкция по установке моего приложения
+# Инструкция по установке моего приложения
+------------------------------------------------------
 
-1. git clone https://github.com/valerylitvinchuk/portfolio.git site
-2. cd site
-3. bower i
-4. npm i
-5. gulp
+> Клонируйте текущий репозиторий
+```
+ $ git clone https://github.com/valerylitvinchuk/portfolio.git site
+```
+> Перейдите в папку
+```
+ $ cd site
+```
+> Установите **bower**
+```
+ $ bower i
+```
+> Установите **npm**
+```
+ $ npm i
+```
+> Запустите **gulp**
+```
+ $ gulp
+```
