@@ -8,10 +8,10 @@ html {
 	padding: 0;
 }
 body {
-	height: 100%;
 	background: url('../img/back.jpg');
-	/*background-sx: ;ize: cover;*/
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	font: normal 1em "Open Sans";
 	min-width: 1200px;
 }
@@ -103,10 +103,12 @@ body {
 .aside-nav {
 	padding: 0;
 	margin: 0;
-	border-radius: 4px;
-	overflow: hidden;
 }
 .aside-nav li {
+	list-style-type: none;
+}
+.aside-nav li:nth-child(2),
+.aside-nav li:nth-child(3) {
 	list-style-type: none;
 	margin-top: -1px;
 }
@@ -125,6 +127,12 @@ body {
   background: linear-gradient(to bottom,  #ffffff 0%,#f2f1f0 0%,#faf9f9 6%,#e7e5e4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e5e4',GradientType=0 );
 }
+.aside-nav li:first-child a {
+	border-radius: 4px 4px 0 0;
+}
+.aside-nav li:last-child a {
+	border-radius: 0 0 4px 4px;
+}
 .aside-nav li a:hover:not(.active) {
 	background: #e8e7e7;
   background: -moz-linear-gradient(top,  #e8e7e7 0%, #e3e1e1 8%, #c2c0c0 100%);
@@ -135,6 +143,7 @@ body {
 .aside-nav li .active {
 	text-shadow: 0 1px 0 #90dbc8;
 	border: 1px solid #2fa185;
+	box-shadow: inset 0 1px 0 0 #a5efdd;
 	color: #1e7465;
 	background: #7ee8ce;
   background: -moz-linear-gradient(top,  #7ee8ce 0%, #3eb799 100%);
@@ -150,23 +159,25 @@ body {
   background: -webkit-linear-gradient(top,  #f4cc7e 10%,#dcb15d 100%);
   background: linear-gradient(to bottom,  #f4cc7e 10%,#dcb15d 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4cc7e', endColorstr='#dcb15d',GradientType=0 );
-	border: 1px solid #cea34e;
+	border: 1px solid #e7bf6f;
 	color: #d0982c;
 	font-size: 20px;
 	font-weight: 600;
 	text-shadow: 0 1px 0 #efd6a4;
 	border-radius: 4px 4px 0 0;
+	box-shadow: inset 0 1px 0 0 #f8dda7;
 }
 .contacts ul {
 	margin: 0;
 	padding: 0;
-	border-radius: 0 0 4px 4px;
-	overflow: hidden;
 }
 .contacts li {
 	list-style-type: none;
 	position: relative;
 	margin-top: -1px;
+}
+.contacts li:last-child a {
+	border-radius: 0 0 4px 4px;
 }
 .contacts li:before {
 	content: "";
@@ -203,13 +214,16 @@ body {
 	color: #727070;
 	display: block;
 	text-decoration: none;
-	padding: 9px 0 9px 100px;
+	padding: 9px 0 12px 100px;
 	background: #ffffff;
   background: -moz-linear-gradient(top,  #ffffff 0%, #e9e7e7 100%);
   background: -webkit-linear-gradient(top,  #ffffff 0%,#e9e7e7 100%);
   background: linear-gradient(to bottom,  #ffffff 0%,#e9e7e7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9e7e7',GradientType=0 );
 	border: 1px solid #d6d5d3;
+	overflow: hidden;
+	width: 160px;
+	height: 15px;
 }
 .contacts a:hover {
 	text-decoration: underline;
@@ -302,13 +316,14 @@ body {
 	display: inline-block;
 	position: relative;
 }
+.worksheet-skills {
+	vertical-align: top;
+}
 .label-size {
   width: 250px;
   padding: 0;
   margin-left: 15px;
-  top: -14px;
-  position: absolute;
-  text-transform: uppercase;;;;
+  text-transform: uppercase;
 }
 .label-size li {
   display: inline-block;
