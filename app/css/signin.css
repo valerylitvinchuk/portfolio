@@ -1,0 +1,9 @@
+.sign-in-form {
+	width: 330px;
+	margin: 0 auto;
+	background: #fbfbfa;
+  background: -moz-linear-gradient(top,  #fbfbfa 0%, #f0eeed 100%);
+  background: -webkit-linear-gradient(top,  #fbfbfa 0%,#f0eeed 100%);
+  background: linear-gradient(to bottom,  #fbfbfa 0%,#f0eeed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfa', endColorstr='#f0eeed',GradientType=0 );
+}

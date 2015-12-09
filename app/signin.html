@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Мои работы</title>
+	<title>Авторизация</title>
 	<!-- SEO -->
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -34,6 +34,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mywork.css">
 	<link rel="stylesheet" href="css/feedback.css">
+	<link rel="stylesheet" href="css/signin.css">
 	<!-- Fontello -->
 	<link rel="stylesheet" type="text/css" href="css/fontello.css">
 	<!-- Modernizr -->
@@ -62,80 +63,17 @@
 				</ul>
 			</div>
 		</header>
-		<div class="content">
-			<div class="main-container clearfix">
-				<aside class="aside">
-					<nav class="nav">
-						<ul class="aside-nav">
-							<li><a href="index.html">Обо мне</a></li>
-							<li><a href="mywork.html" class="active">Мои работы</a></li>
-							<li><a href="feedback.html">Обратная связь</a></li>
-						</ul>
-					</nav>
-					<div class="contacts">
-						<header class="contacts-header">Контакты</header>
-						<ul>
-							<li><a href="mailto:valery.litvinchuk@gmail.com?subject=Письмо с сайта" class="icon-mail-alt">valery.litvinchuk@gmail.com</a></li>
-							<li><a href="skype:valery.litvinchuk?chat" class="icon-phone">+375298201059</a></li>
-							<li><a href="skype:valery.litvinchuk?chat" class="icon-skype">valery.litvinchuk</a></li>
-						</ul>
-					</div>
-				</aside>
-				<main class="main">
-					<section class="section">
-						<header class="section-header">Мои работы</header>
-						<div class="section-content  section-work clearfix">
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-1">
-									<a href="#" class="work-more">Подробнее</a>
-								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-2">
-									<a href="#" class="work-more">Подробнее</a>
-								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-3">
-									<a href="#" class="work-more">Подробнее</a>
-								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-4">
-									<a href="#" class="work-more">Подробнее</a>
-								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<div class="work-img">
-									<img src="http://placehold.it/165x120/" alt="Work-5">
-									<a href="#" class="work-more">Подробнее</a>
-								</div>
-								<div class="work-title">noname.com</div>
-								<div class="work-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-							</div>
-							<div class="work-item">
-								<a href="#" class="add-project-button">
-									<div class="add-project icon-picture"></div>
-									<p class="add-project-text">Добавить проект</p>
-								</a>
-							</div>
-						</div>
-					</section>
-				</main>
-			</div>
-		</div>
+		<main>
+			<form action="" class="sign-in-form">
+				<label for="sign-in-mail"></label>
+				<input type="email" id="sign-in-mail" placeholder="Введите Email">
+				<label for="sign-in-password"></label>
+				<input type="password" id="sign-in-password" placeholder="Введите пароль">
+				<label for="sign-in-checkbox">Запонить меня?</label>
+				<input type="checkbox" id="sign-in-checkbox">
+				<input type="submit" value="Войти" class="submit sign-in-submit">
+			</form>
+		</main>
 		<div class="empty"></div>
 	</div>
 	<footer class="footer">
