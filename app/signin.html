@@ -65,12 +65,14 @@
 		</header>
 		<main>
 			<form action="" class="sign-in-form">
-				<label for="sign-in-mail"></label>
-				<input type="email" id="sign-in-mail" placeholder="Введите Email">
-				<label for="sign-in-password"></label>
-				<input type="password" id="sign-in-password" placeholder="Введите пароль">
-				<label for="sign-in-checkbox">Запонить меня?</label>
-				<input type="checkbox" id="sign-in-checkbox">
+				<input type="email" class="input-mail" id="sign-in-mail" placeholder="Введите Email">
+				<input type="password" class="input-password" id="sign-in-password" placeholder="Введите пароль">
+				<div class="wrapper-checkbox">
+				
+					<input type="checkbox" class="checkbox" id="sign-in-checkbox">
+					<label for="sign-in-checkbox" class="label-checkbox icon-ok">Запомнить меня?</label>
+					
+				</div>
 				<input type="submit" value="Войти" class="submit sign-in-submit">
 			</form>
 		</main>
