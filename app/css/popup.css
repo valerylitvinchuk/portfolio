@@ -1,0 +1,68 @@
+.pop-up {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(114, 114, 112, .72);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}
+.modal-form {
+	position: relative;
+	padding: 20px;
+	width: 320px;
+	border-radius: 5px;
+	border: 1px solid #b5b5b5;
+	box-shadow: 0 10px 20px -10px #222;
+	background: #fbfbfa;
+  background: -moz-linear-gradient(top,  #fbfbfa 0%, #f0eeed 100%);
+  background: -webkit-linear-gradient(top,  #fbfbfa 0%,#f0eeed 100%);
+  background: linear-gradient(to bottom,  #fbfbfa 0%,#f0eeed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfa', endColorstr='#f0eeed',GradientType=0 );
+  margin: 0 50%;
+  left: -181px;
+  top: 130px;
+}
+.project-name,
+.project-pic,
+.project-url,
+.project-desc {
+	display: block;
+	background-color: #f8f8f9;
+	border: 1px solid #d6d5d3;
+	border-radius: 4px;
+	outline: none;
+	width: 310px;
+	line-height: 37px;
+	padding-left: 8px;
+	margin-bottom: 9px;
+}
+.project-name:focus,
+.project-pic:focus,
+.project-url:focus,
+.project-desc:focus {
+	box-shadow: 0 0 3px 0 #ad8871;
+}
+.project-desc {
+	height: 105px;
+}
+.project-add {
+	margin: 13px auto 6px auto;
+	width: 124px;
+	display: block;
+}
+.icon-cancel {
+	text-decoration: none;
+	display: block;
+	color: #797777;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.modal-form-title {
+	color: #f8f7f6;
+	font-size: 12px;
+	position: absolute;
+	left: 22px;
+	top: -33px;
+}

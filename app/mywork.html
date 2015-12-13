@@ -34,6 +34,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mywork.css">
 	<link rel="stylesheet" href="css/feedback.css">
+	<link rel="stylesheet" href="css/popup.css">
 	<!-- Fontello -->
 	<link rel="stylesheet" type="text/css" href="css/fontello.css">
 	<!-- Modernizr -->
@@ -136,11 +137,26 @@
 				</main>
 			</div>
 		</div>
+		<div class="pop-up">
+			<form action="" class="modal-form">
+				<p class="modal-form-title">Добавление проекта</p>
+				<a href="#" class="icon-cancel"></a>
+				<label for="project-name">Название проекта</label>				
+				<input type="text" id="project-name" class="project-name" placeholder="Введите название">
+				<label for="project-pic">Картинка проекта</label>
+				<input type="file" id="project-pic" class="project-pic" value="Загрузите изображение">
+				<label for="project-url">URL проекта</label>
+				<input type="url" id="project-url" class="project-url" placeholder="Добавьте ссылку">
+				<label for="project-desc">Описание</label>
+				<textarea id="project-desc" class="project-desc" placeholder="Пара слов о вашем проекте"></textarea>
+				<input type="submit" class="submit project-add" value="Добавить">
+			</form>
+		</div>
 		<div class="empty"></div>
 	</div>
 	<footer class="footer">
 		<div class="inset-footer-wrapper">	
-			<a href="#" class="sign-in">Вход</a>
+			<a href="signin.html" class="sign-in">Вход</a>
 			<p class="copyright">&#169; 2015. Это мой сайт. Пожалуйста, не копируйте и не воруйте его!</p>
 		</div>
 	</footer>

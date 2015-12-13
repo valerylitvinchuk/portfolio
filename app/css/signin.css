@@ -1,7 +1,9 @@
 .sign-in-form {
-	width: 330px;
+	position: relative;
+	padding: 38px 38px 39px;
+	width: 255px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 100px;
 	border-radius: 5px;
 	border: 1px solid #b5b5b5;
 	box-shadow: 0 10px 20px -10px #9f9f9f;
@@ -10,6 +12,24 @@
   background: -webkit-linear-gradient(top,  #fbfbfa 0%,#f0eeed 100%);
   background: linear-gradient(to bottom,  #fbfbfa 0%,#f0eeed 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfa', endColorstr='#f0eeed',GradientType=0 );
+  margin-bottom: 50px;
+}
+.sign-in-title {
+	color: #727070;
+	font-size: 12px;
+	position: absolute;
+	left: 22px;
+	top: -33px;
+}
+.input-wrapper {
+	position: relative;
+}
+.icon-mail-alt-signin:before,
+.icon-key:before {
+	position: absolute;
+	top: 13px;
+	left: 14px;
+	color: #9c9c9c;
 }
 .input-mail,
 .input-password {
@@ -19,15 +39,56 @@
 	outline: none;
 	width: 181px;
 	line-height: 37px;
-	padding-left: 8px;
+	padding-left: 70px;
+	margin-bottom: 24px;
 }
 .input-mail:focus,
 .input-password:focus {
 	box-shadow: 0 0 3px 0 #ad8871;
 }
+.label-input-mail,
+.label-input-password {
+	margin: 0;
+}
+.label-input-mail:before,
+.label-input-password:before {
+	content: "";
+	height: 22px;
+	width: 1px;
+	position: absolute;
+	display: inline-block;
+	background-color: #d6d5d3;
+	-webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(-25deg);
+  left: 48px;
+  top: 0px;
+  z-index: 3;
+}
+.label-input-mail:after,
+.label-input-password:after {
+	content: "";
+	height: 22px;
+	width: 1px;
+	position: absolute;
+	display: inline-block;
+	background-color: #d6d5d3;
+	-webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(25deg);
+  left: 48px;
+  z-index: 3;
+  top: 20px;
+}
 .wrapper-checkbox {
 	line-height: 16px;
 	position: relative;
+	margin-top: -5px;
+	margin-bottom: 21px;
 }
 .label-checkbox:after {
 	content: "";
@@ -57,4 +118,9 @@
 }
 .checkbox:checked + .icon-ok:before {
 	display: inline-block;
+}
+.sign-in-submit {
+	width: 150px;
+	margin: 0 auto;
+	display: block;
 }
