@@ -31,6 +31,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mywork.css">
 	<link rel="stylesheet" href="css/feedback.css">
@@ -140,9 +141,11 @@
 		<div class="pop-up">
 			<form action="" class="modal-form">
 				<p class="modal-form-title">Добавление проекта</p>
-				<a href="#" class="icon-cancel"></a>
+				<a href="#" class="icon-cancel b-close"></a>
+				<div class="server-mes error-mes"></div>
+				<div class="server-mes success-mes"></div>
 				<label for="project-name">Название проекта</label>				
-				<input type="text" id="project-name" class="project-name" placeholder="Введите название">
+				<input type="text" id="project-name" class="project-name" placeholder="Введите название" title="введите название">
 				<label for="project-pic">Картинка проекта</label>
 				<input type="file" id="project-pic" class="project-pic" value="Загрузите изображение">
 				<label for="project-url">URL проекта</label>
@@ -161,6 +164,10 @@
 		</div>
 	</footer>
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower//jquery-validation/dist/jquery.validate.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/addproject.js"></script>
 </body>
 </html>
