@@ -2,7 +2,7 @@ var myModule = (function () {
 
 	var init = function () {
 		_setUpListners();
-	}
+	};
 
 	var _setUpListners = function () {
 		// прослушка событий
@@ -12,10 +12,16 @@ var myModule = (function () {
 
 	var _showModal = function (ev) {
 		ev.preventDefault();
-		$('.pop-up').bPopup({
+
+		var divPopup = $('.pop-up'),
+				form = divPopup.find('.modal-form');
+		divPopup.bPopup({
 	    speed: 650,
       transition: 'slideDown',
-      modalColor: '#727070'
+      modalColor: '#727070',
+      onClose: function () {
+      	form.find('.server-mes').text('').hide();
+      }
     });
 	};
 
@@ -26,30 +32,40 @@ var myModule = (function () {
 		// объявляем переменные
 		var form = $(this),
 				url = 'add_project.php',
-				data = form.serialize();
+				myServerGiveMeAnAnswer = _ajaxForm(form, url);
 
-		console.log(data);
+		myServerGiveMeAnAnswer.done(function(ans) {
 
-		// запрос на сервер
-		$.ajax({
-			url: url,
-			type: 'POST',
-			dataType: 'json',
-			data: data,
-		})
-		.done(function(ans) {
-			console.log("success");
-			if (ans.mes === 'OK') {
-				form.find('.success-mes').text(ans.text);
+			var successBox = form.find('.success-mes'),
+					errorBox = form.find('.error-mes');
+
+			if (ans.status === 'OK') {
+				errorBox.hide();
+				successBox.text(ans.text).show();
 			} else {
-				form.find('.error-mes').text(ans.text);
+				successBox.hide();
+				errorBox.text(ans.text).show();
 			};
 		})
-		.fail(function() {
-			console.log("error");
-		});
-		
+	};
 
+	var _ajaxForm = function (form, url) {
+
+		// if (!valid) return false;
+
+		var data = form.serialize();
+
+		var result = $.ajax({
+				url: url,
+				type: 'POST',
+				dataType: 'json',
+				data: data,
+			}).fail( function(ans) {
+				console.log('Проблемы в PHP');
+				form.find('.error-mes').text('На сервере произошла ошибка').show();
+			});
+
+		return result;
 	};
 
 	return {
