@@ -66,7 +66,7 @@ var validation = (function () {
 					val = element.val();
 					pos = element.attr('qtip-position');
 
-			if (val.lenght === 0) {
+			if (val.length === 0) {
 				_createQtip (element, pos);
 				valid = false;
 			}
