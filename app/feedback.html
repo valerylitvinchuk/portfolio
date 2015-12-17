@@ -35,6 +35,7 @@
 	<link rel="stylesheet" href="css/mywork.css">
 	<link rel="stylesheet" href="css/feedback.css">
 	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="bower/qtip2/basic/jquery.qtip.css">
 	<!-- Fontello -->
 	<link rel="stylesheet" type="text/css" href="css/fontello.css">
 	<!-- Modernizr -->
@@ -86,21 +87,21 @@
 					<section class="section">
 						<header class="section-header">У вас интересный проект? Напишите мне</header>
 						<div class="section-content section-feedback">
-							<form action="">
+							<form action="" id="contact-me">
 								<div class="form-wrapper">
 									<label for="name">Имя</label>
-									<input class="name" type="text" id="name" placeholder="Как к Вам обращаться" required>
+									<input class="name" type="text" id="name" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели имя">
 								</div>
 								<div class="form-wrapper">
 									<label for="mail">Email</label>
-									<input class="mail" type="email" id="mail" placeholder="Куда мне писать" required>
+									<input class="mail" type="email" id="mail" placeholder="Куда мне писать">
 								</div>
 								<label for="message">Сообщение</label>
-								<textarea class="message" id="message" placeholder="Кратко в чём суть" required></textarea>
+								<textarea class="message" id="message" placeholder="Кратко в чём суть"></textarea>
 								<div class="form-big-wrapper">
 									<label for="code">Введите код, указанный на картинке</label>
 									<img src="http://placehold.it/190x80/" class="captcha" alt="captcha">
-									<input class="code" type="text" id="code" placeholder="Введите код" required>
+									<input class="code" type="text" id="code" placeholder="Введите код">
 								</div>
 								<input class="submit" type="submit" value="Отправить">
 								<input class="reset" type="reset" value="Очистить">
@@ -119,6 +120,9 @@
 		</div>
 	</footer>
 	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="js/main.js"></script>
+	<script src="bower/qtip2/basic/jquery.qtip.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+	<script src="js/validation.js"></script>
+	<script src="js/contactme.js"></script>
 </body>
 </html>
