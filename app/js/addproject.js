@@ -4,10 +4,27 @@ var myModule = (function () {
 		_setUpListners();
 	};
 
+	// Получаем название файла из пути
+	var _getNameFromPath = function (path) {
+		return path.replace(/\\/g, '/').replace(/.*\//, '');
+	};
+
 	var _setUpListners = function () {
 		// прослушка событий
 		$('.add-project-button').on('click', _showModal); // открыть модальное окно
 		$('.modal-form').on('submit', _addProject); // добавление проекта
+		$('#fileupload').on('change', _changefileUpload);
+	};
+
+	// Изменили файл аплоад (добавили файл в файлаплоад)
+	var _changefileUpload = function (){
+		var input = $(this), // инпут type="file"
+			name = _getNameFromPath(input.val()); // имя загруженного файла
+
+		$('#filename')
+			.val(name) // 
+			.trigger('hideTooltip')
+			.removeClass('has-error'); 
 	};
 
 	var _showModal = function (ev) {
@@ -16,13 +33,14 @@ var myModule = (function () {
 		var divPopup = $('.pop-up'),
 				form = divPopup.find('.modal-form');
 		divPopup.bPopup({
-	    speed: 650,
-      transition: 'slideDown',
-      modalColor: '#727070',
-      onClose: function () {
-      	form.find('.server-mes').text('').hide();
-      }
-    });
+	    	speed: 650,
+      		transition: 'slideDown',
+      		modalColor: '#727070',
+      		onClose: function () {
+      			form.find('.server-mes').text('').hide(),
+      			form.trigger('reset');
+      		}
+    	});
 	};
 
 	var _addProject = function (ev) {
@@ -32,9 +50,11 @@ var myModule = (function () {
 		// объявляем переменные
 		var form = $(this),
 				url = 'add_project.php',
-				myServerGiveMeAnAnswer = _ajaxForm(form, url);
+				defObj = _ajaxForm(form, url);
 
-		myServerGiveMeAnAnswer.done(function(ans) {
+		if (defObj) {
+
+			defObj.done(function(ans) {
 
 			var successBox = form.find('.success-mes'),
 					errorBox = form.find('.error-mes');
@@ -46,12 +66,16 @@ var myModule = (function () {
 				successBox.hide();
 				errorBox.text(ans.text).show();
 			};
-		})
+			})
+
+		};
+
+		
 	};
 
 	var _ajaxForm = function (form, url) {
 
-		// if (!valid) return false;
+		if (!validation.validateForm(form)) return false;
 
 		var data = form.serialize();
 

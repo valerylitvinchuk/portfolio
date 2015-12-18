@@ -51,6 +51,9 @@ textarea:-ms-input-placeholder {
 	font-size: 12px;
 	font-weight: 300;
 }
+textarea {
+	resize: none;
+}
 label {
 	font-size: 14px;
 	font-weight: normal;

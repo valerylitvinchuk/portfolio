@@ -495,3 +495,6 @@ body {
 	vertical-align: middle;
 	margin-left: 55px;
 }
+.has-error {
+	box-shadow: 0 0 3px 0 #dd683c;
+}

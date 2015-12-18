@@ -144,14 +144,20 @@
 				<a href="#" class="icon-cancel b-close"></a>
 				<div class="server-mes error-mes"></div>
 				<div class="server-mes success-mes"></div>
-				<label for="project-name">Название проекта</label>				
-				<input type="text" id="project-name" class="project-name" placeholder="Введите название" title="введите название" name="projectName">
-				<label for="project-pic">Картинка проекта</label>
-				<input type="file" id="project-pic" class="project-pic" value="Загрузите изображение" name="fileUrl">
+				<label for="project-name">Название проекта</label>
+				<input type="text" id="project-name" class="project-name" placeholder="Введите название" title="введите название" name="projectName" qtip-content="введите название" qtip-position="left">
+				<div class="fileupload-wrapper">
+					<span class="label">Картинка проекта</span>
+					<label class="fileupload-lable icon-download-cloud">
+            <input id="fileupload" class="fileupload" type="file" name="files[]">
+            <input id="fileurl" type="hidden" name="fileurl">
+          </label>
+				<input id="filename" type="text" class="input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="изображение" qtip-position="left">
+				</div>
 				<label for="project-url">URL проекта</label>
-				<input type="url" id="project-url" class="project-url" placeholder="Добавьте ссылку" name="projectUrl">
+				<input type="url" id="project-url" class="project-url" placeholder="Добавьте ссылку" name="projectUrl" qtip-content="ссылка на проект" qtip-position="left">
 				<label for="project-desc">Описание</label>
-				<textarea id="project-desc" class="project-desc" placeholder="Пара слов о вашем проекте" name="projectDescription"></textarea>
+				<textarea id="project-desc" class="project-desc" placeholder="Пара слов о вашем проекте" name="projectDescription" qtip-content="описание проекта" qtip-position="left"></textarea>
 				<input type="submit" class="submit project-add" value="Добавить">
 			</form>
 		</div>
@@ -166,9 +172,10 @@
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
-	<script src="bower//jquery-validation/dist/jquery.validate.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/addproject.js"></script>
+	
+	<!-- script src="js/main.js"></script> -->
+	
 	<script src="js/validation.js"></script>
+	<script src="js/addproject.js"></script>
 </body>
 </html>

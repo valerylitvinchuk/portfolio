@@ -7,7 +7,18 @@ var validation = (function () {
 
 	var _setUpListners = function () {
 		// прослушка событий
-		
+		$('form').on('keydown', '.has-error', _removeError);
+		$('form').on('reset', _clearForm);
+	};
+
+	var _removeError = function () {
+		$(this).removeClass('has-error');
+	};
+
+	var _clearForm = function (form) {
+		var form = $(this);
+		form.find('input, textarea').trigger('hideTooltip');
+		form.find('.has-error').removeClass('has-error');
 	};
 
 	// создание тултипа
@@ -56,7 +67,7 @@ var validation = (function () {
 	// Универсальная функция валидации
 	var validateForm = function (form) {
 
-		var elements = form.find('input', 'textarea').not('input[type="file"]', 'input[type="hidden"]'),
+		var elements = form.find('input, textarea').not('input[type="file"]', 'input[type="hidden"]'),
 				valid = true;
 
 				console.log(elements);
@@ -67,6 +78,7 @@ var validation = (function () {
 					pos = element.attr('qtip-position');
 
 			if (val.length === 0) {
+				element.addClass('has-error');
 				_createQtip (element, pos);
 				valid = false;
 			}
