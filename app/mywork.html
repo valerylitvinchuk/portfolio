@@ -85,7 +85,9 @@
 				</aside>
 				<main class="main">
 					<section class="section">
-						<header class="section-header">Мои работы</header>
+						<header class="section-header">
+							<h1>Мои работы</h1>
+						</header>
 						<div class="section-content  section-work clearfix">
 							<div class="work-item">
 								<div class="work-img">
@@ -148,13 +150,7 @@
 						<span class="message-text">Невозможно добавить проект.</span>
 					</div>
 				</div>
-				<div class="server-mes success-mes">
-					<div class="message-frame">
-						<a href="#" class="icon-cancel b-close"></a>
-						<span class="message-title">Ура!</span>
-						<span class="message-text">Проект успешно добавлен.</span>
-					</div>
-				</div>
+				
 				<label for="project-name">Название проекта</label>
 				<input type="text" id="project-name" class="project-name" placeholder="Введите название" title="введите название" name="projectName" qtip-content="введите название" qtip-position="left">
 				<div class="fileupload-wrapper">
@@ -170,8 +166,15 @@
 				<label for="project-desc">Описание</label>
 				<textarea id="project-desc" class="project-desc" placeholder="Пара слов о вашем проекте" name="projectDescription" qtip-content="описание проекта" qtip-position="left"></textarea>
 				<input type="submit" class="submit project-add" value="Добавить">
-				<input type="reset" class="submit project-add" value="Сбросить">
 			</form>
+
+		</div>
+		<div class="server-mes success-mes">
+			<div class="message-frame">
+				<a href="#" class="icon-cancel b-close"></a>
+				<span class="message-title">Ура!</span>
+				<span class="message-text">Проект успешно добавлен.</span>
+			</div>
 		</div>
 		<div class="empty"></div>
 	</div>
@@ -182,10 +185,14 @@
 		</div>
 	</footer>
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/html5shiv/dist/html5shiv-printshiv.js"></script>
+  <script src="bower/selectivizr/selectivizr.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/addproject.js"></script>
 	<script src="js/validation.js"></script>
-	<script src="js/main.js"></script>
-	
+	<script src="js/contactme.js"></script>
+	<script src="js/placeholder.js"></script>
 </body>
 </html>

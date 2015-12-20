@@ -10,7 +10,6 @@ var myModule = (function () {
 	};
 
 	var _submitForm = function (ev) {
-		console.log('Отправка формы');
 		ev.preventDefault();
 
 		var form = $(this),
@@ -19,7 +18,6 @@ var myModule = (function () {
 	};
 
 	var _ajaxForm = function (form, url) {
-		console.log('Ajax запрос с проверкой формы');
 		if (!validation.validateForm(form)) return false;
 	};
 

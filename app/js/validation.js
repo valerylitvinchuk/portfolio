@@ -80,8 +80,6 @@ var validation = (function () {
 					val = element.val();
 					pos = element.attr('qtip-position');
 
-					console.log(val.length);
-
 			if (val.length === 0) {
 				element.addClass('has-error');
 				_createQtip (element, pos);

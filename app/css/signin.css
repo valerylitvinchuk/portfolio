@@ -41,6 +41,9 @@
 	line-height: 37px;
 	padding-left: 70px;
 	margin-bottom: 24px;
+	color: #c7c6c6;
+	font-size: 12px;
+	height: 37px;
 }
 .input-mail:focus,
 .input-password:focus {

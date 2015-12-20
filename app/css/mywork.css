@@ -55,9 +55,10 @@
 }
 .work-description {
 	font-size: 12px;
-	font-weight: 300;
+	font-weight: 200;
 	text-align: center;
 	padding: 4px 5px;
+	color: #727070;
 }
 .add-project-button {
 	text-decoration: none;

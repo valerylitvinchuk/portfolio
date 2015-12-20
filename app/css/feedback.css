@@ -69,6 +69,8 @@ label {
 	border: 1px solid #d6d5d3;
 	border-radius: 4px;
 	outline: none;
+	color: #c7c6c6;
+	font-size: 12px;
 }
 .name:focus,
 .mail:focus,
@@ -81,6 +83,7 @@ label {
 	width: 181px;
 	line-height: 37px;
 	padding-left: 8px;
+	height: 37px;
 }
 .message {
 	width: 390px;
@@ -96,12 +99,13 @@ label {
 	display: inline-block;
 }
 .code {
-	line-height: 28px;
+	line-height: 37px;
 	padding-left: 8px;
 	width: 181px;
 	position: absolute;
 	top: 47px;
 	left: 211px;
+	height: 37px;
 }
 .submit,
 .reset {

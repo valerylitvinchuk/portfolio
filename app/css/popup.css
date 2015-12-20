@@ -1,12 +1,5 @@
 .pop-up {
 	display: none;
-	/*height: 100%;
-	width: 100%;
-	background-color: rgba(114, 114, 112, .72);
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9;*/
 }
 .modal-form {
 	position: relative;
@@ -22,7 +15,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfa', endColorstr='#f0eeed',GradientType=0 );
   margin: 0 50%;
   left: -181px;
-/*  top: 130px;*/
 }
 .project-name,
 .project-pic,
@@ -37,6 +29,13 @@
 	line-height: 37px;
 	padding-left: 8px;
 	margin-bottom: 9px;
+	color: #c7c6c6;
+	font-size: 12px;
+}
+.project-name,
+.project-pic,
+.project-url {
+	height: 37px;
 }
 .project-name:focus,
 .project-pic:focus,
@@ -146,9 +145,10 @@
 }
 .success-mes {
 	display: none;
+	margin: 0 50%;
+  left: -181px;
 	z-index: 999;
-	top: 175px;
-	left: -1px;
+	top: 300px;
 	padding: 20px;
 	width: 320px;
 	border: 1px solid #b5b5b5;

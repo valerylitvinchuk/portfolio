@@ -16,11 +16,17 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.4",
+    "jquery": "1.11.3",
     "normalize-css": "normalize.css#~3.0.3",
     "modernizer": "~2.8.2",
     "bPopup": "bpopup#~0.11.0",
     "qtip2": "~2.2.1",
-    "jquery-validation": "~1.14.0"
+    "selectivizr": "~1.0.2",
+    "html5shiv": "~3.7.3",
+    "jquery-placeholder": "~2.3.1",
+    "google-open-sans": "~1.0.0"
+  },
+  "resolutions": {
+    "jquery": "1.11.3"
   }
 }
