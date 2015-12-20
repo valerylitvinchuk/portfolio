@@ -9,6 +9,7 @@ var validation = (function () {
 		// прослушка событий
 		$('form').on('keydown', '.has-error', _removeError);
 		$('form').on('reset', _clearForm);
+
 	};
 
 	var _removeError = function () {
@@ -19,8 +20,10 @@ var validation = (function () {
 		var form = $(this);
 		form.find('input, textarea').trigger('hideTooltip');
 		form.find('.has-error').removeClass('has-error');
+		$('.qtip').hide();
 	};
 
+	
 	// создание тултипа
 	var _createQtip = function (element, position) {
 		
@@ -28,12 +31,14 @@ var validation = (function () {
 		if (position === 'right') {
 			position = {
 				my: 'left center',
-				at: 'right center'
+				at: 'right center',
+				container: $('.pop-up')
 			}
 		} else {
 			position = {
 				my: 'right center',
 				at: 'left center',
+				container: $('.pop-up'),
 				adjust: {
 					method: 'shift none'
 				}
@@ -54,10 +59,10 @@ var validation = (function () {
 			},
 			position: position,
 			style: {
-				classes: 'qtip-red qtip-shadow qtip-rounded',
+				classes: 'qtip-mystyle',
 				tip: {
-					height: 10,
-					width: 16
+					height: 6,
+					width: 8
 				}
 			}
 		}).trigger('show');
@@ -67,22 +72,23 @@ var validation = (function () {
 	// Универсальная функция валидации
 	var validateForm = function (form) {
 
-		var elements = form.find('input, textarea').not('input[type="file"]', 'input[type="hidden"]'),
+		var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"], input[type="submit"]'),
 				valid = true;
-
-				console.log(elements);
 
 		$.each(elements, function(index, val){
 			var element = $(val),
 					val = element.val();
 					pos = element.attr('qtip-position');
 
+					console.log(val.length);
+
 			if (val.length === 0) {
 				element.addClass('has-error');
 				_createQtip (element, pos);
 				valid = false;
-			}
 
+			}
+			
 		});
 
 		return valid;

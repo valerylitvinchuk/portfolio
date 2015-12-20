@@ -139,11 +139,22 @@
 			</div>
 		</div>
 		<div class="pop-up">
-			<form action="" class="modal-form">
+			<form action="add_project.php" class="modal-form" id="add-new-project">
 				<p class="modal-form-title">Добавление проекта</p>
 				<a href="#" class="icon-cancel b-close"></a>
-				<div class="server-mes error-mes"></div>
-				<div class="server-mes success-mes"></div>
+				<div class="server-mes error-mes">
+					<div class="message-frame">
+						<span class="message-title">Ошибка!</span>
+						<span class="message-text">Невозможно добавить проект.</span>
+					</div>
+				</div>
+				<div class="server-mes success-mes">
+					<div class="message-frame">
+						<a href="#" class="icon-cancel b-close"></a>
+						<span class="message-title">Ура!</span>
+						<span class="message-text">Проект успешно добавлен.</span>
+					</div>
+				</div>
 				<label for="project-name">Название проекта</label>
 				<input type="text" id="project-name" class="project-name" placeholder="Введите название" title="введите название" name="projectName" qtip-content="введите название" qtip-position="left">
 				<div class="fileupload-wrapper">
@@ -159,6 +170,7 @@
 				<label for="project-desc">Описание</label>
 				<textarea id="project-desc" class="project-desc" placeholder="Пара слов о вашем проекте" name="projectDescription" qtip-content="описание проекта" qtip-position="left"></textarea>
 				<input type="submit" class="submit project-add" value="Добавить">
+				<input type="reset" class="submit project-add" value="Сбросить">
 			</form>
 		</div>
 		<div class="empty"></div>
@@ -172,10 +184,8 @@
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
-	
-	<!-- script src="js/main.js"></script> -->
-	
 	<script src="js/validation.js"></script>
-	<script src="js/addproject.js"></script>
+	<script src="js/main.js"></script>
+	
 </body>
 </html>
