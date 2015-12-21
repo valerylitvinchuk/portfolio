@@ -62,7 +62,8 @@
 						if (ans.status === 'OK') {
 							
 							errorBox.hide();
-							$('.modal-form').hide();
+							var bPopup = $(".modal-form").bPopup();
+							bPopup.close();
 
 							$('.success-mes').bPopup({
 						    speed: 650,
